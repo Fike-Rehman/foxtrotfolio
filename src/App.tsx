@@ -6,11 +6,12 @@ import Projects from './Components/3Projects/Projects'
 import Resume from './Components/4Resume/Resume'
 import './App.css'
 import React from 'react'
+import FooterBar from './Components/FooterBar/FooterBar'
 
 
 const App: React.FC = () => {
   return (
-    <Router>
+    <Router basename='/foxtrotfolio'>
       <NavigationBar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -18,6 +19,7 @@ const App: React.FC = () => {
         <Route path="/projects" element={<Projects />} />
         <Route path="/resume" element={<Resume />} />
       </Routes>
+      <FooterBar />
     </Router>
   )
 }
