@@ -16,10 +16,6 @@
     color: #f8f9fa;
 }
 
-.custom-navbar .navbar-nav .nav-link:hover {
-    color: #0d6efd;
-}
-
 .custom-navbar .navbar-toggler {
     border: none;
 }
@@ -28,12 +24,23 @@
     box-shadow: none;
 }
 
-.nav-icon {
-    margin-right: 5px;
+.nav-link {
+    margin-left: 10px;
+    transform-origin: left center;
+    display: flex;
+    align-items: center;
+    gap: 5px;
     color: white;
+    font-size: 1rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+    text-decoration: none;
 }
 
-.nav-icon:hover {
-    color: #0d6efd;
-    /* Change color on hover, optional */
+.nav-link:hover {
+    transform: scale(1.1);
+
+}
+
+.nav-icon {
+    transition: transform 0.3s ease, color 0.3s ease;
 }

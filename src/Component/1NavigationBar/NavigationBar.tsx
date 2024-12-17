@@ -11,16 +11,16 @@ const NavigationBar: React.FC = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
-            <Nav.Link href="#home">
+            <Nav.Link href="#home" className="nav-link">
               <BsHouse className="nav-icon" /> Home
             </Nav.Link>
-            <Nav.Link href="#about">
+            <Nav.Link href="#about" className="nav-link">
               <BsInfoCircle className="nav-icon" /> About
             </Nav.Link>
-            <Nav.Link href="#projects">
+            <Nav.Link href="#projects" className="nav-link">
               <BsBriefcase className="nav-icon" /> Projects
             </Nav.Link>
-            <Nav.Link href="#resume">
+            <Nav.Link href="#resume" className="nav-link">
               <BsFileEarmarkRichtext className="nav-icon" /> Resume
             </Nav.Link>
           </Nav>
