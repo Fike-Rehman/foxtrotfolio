@@ -2,25 +2,31 @@ import React from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import { BsBriefcase, BsFileEarmarkRichtext, BsHouse, BsInfoCircle } from "react-icons/bs";
 import "./NavigationBar.css";
+import { Link } from "react-router-dom";
 
 const NavigationBar: React.FC = () => {
+
+    const [expanded, setExpanded] = React.useState(false);
+
+    const handleNavClick = () => setExpanded(false);
+
     return (
-        <Navbar bg="dark" variant="dark" expand="lg" className="custom-navbar">
+        <Navbar bg="dark" variant="dark" expand="lg" expanded={expanded} className="custom-navbar">
             <Container>
                 <Navbar.Brand href="#home">Welcome</Navbar.Brand>
-                <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={() => setExpanded(!expanded)} />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ms-auto">
-                        <Nav.Link href="#home" className="nav-link">
+                        <Nav.Link as={Link} to="/" className="nav-link" onClick={handleNavClick}>
                             <BsHouse className="nav-icon" /> Home
                         </Nav.Link>
-                        <Nav.Link href="#about" className="nav-link">
+                        <Nav.Link as={Link} to="/about" className="nav-link" onClick={handleNavClick}>
                             <BsInfoCircle className="nav-icon" /> About
                         </Nav.Link>
-                        <Nav.Link href="#projects" className="nav-link">
+                        <Nav.Link as={Link} to="/projects" className="nav-link" onClick={handleNavClick}>
                             <BsBriefcase className="nav-icon" /> Projects
                         </Nav.Link>
-                        <Nav.Link href="#resume" className="nav-link">
+                        <Nav.Link as={Link} to="resume" className="nav-link" onClick={handleNavClick}>
                             <BsFileEarmarkRichtext className="nav-icon" /> Resume
                         </Nav.Link>
                     </Nav>

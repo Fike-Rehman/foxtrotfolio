@@ -8,3 +8,5 @@ const Resume: React.FC = () => {
         </div>
     );
 };
+
+export default Resume;
