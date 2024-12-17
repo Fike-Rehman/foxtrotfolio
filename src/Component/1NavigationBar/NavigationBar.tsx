@@ -1,6 +1,7 @@
 import React from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
-import "./NavigationBar.css"; // Import custom CSS file
+import { BsBriefcase, BsFileEarmarkRichtext, BsHouse, BsInfoCircle } from "react-icons/bs";
+import "./NavigationBar.css";
 
 const NavigationBar: React.FC = () => {
   return (
@@ -10,10 +11,18 @@ const NavigationBar: React.FC = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#about">About</Nav.Link>
-            <Nav.Link href="#projects">Projects</Nav.Link>
-            <Nav.Link href="#resume">Resume</Nav.Link>
+            <Nav.Link href="#home">
+              <BsHouse className="nav-icon" /> Home
+            </Nav.Link>
+            <Nav.Link href="#about">
+              <BsInfoCircle className="nav-icon" /> About
+            </Nav.Link>
+            <Nav.Link href="#projects">
+              <BsBriefcase className="nav-icon" /> Projects
+            </Nav.Link>
+            <Nav.Link href="#resume">
+              <BsFileEarmarkRichtext className="nav-icon" /> Resume
+            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
