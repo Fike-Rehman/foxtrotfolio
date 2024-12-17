@@ -1,7 +1,4 @@
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
-import { Nav, Navbar } from 'react-bootstrap'
 import NavigationBar from './Component/1NavigationBar/NavigationBar'
 
 function App() {
@@ -9,20 +6,10 @@ function App() {
   return (
     <>
       <NavigationBar></NavigationBar>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <div style={{ paddingTop: '100px', textAlign: 'center' }}>
+        <h1> This site is under construction</h1>
+        <p> Please check again later </p>
       </div>
-      <h1>Vite + React</h1>
-      <p> This site is under construction</p>
-      <p> Please check again later </p>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
   )
 }

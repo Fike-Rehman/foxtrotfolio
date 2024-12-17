@@ -1,23 +1,22 @@
-import { Nav, Navbar } from 'react-bootstrap';
-import './NavigationBar.css';
+import React from "react";
+import { Navbar, Nav, Container } from "react-bootstrap";
+import "./NavigationBar.css"; // Import custom CSS file
 
-interface NavigationBarProps {
-  // Add any props you want to pass to the component
-}
-
-const NavigationBar: React.FC<NavigationBarProps> = () => {
+const NavigationBar: React.FC = () => {
   return (
-    <Navbar bg="dark" expand="lg" className="navbar">
-      <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="nav-bar">
-          <Nav.Link href="#home" className='nav-home'>Home</Nav.Link>
-          <div className='nav-links'>
-            <Nav.Link href="#about" className='nav-link'>About</Nav.Link>
-            <Nav.Link href="#projects" className='nav-link'>Projects</Nav.Link>
-            <Nav.Link href="#resume" className='nav-link'>Resume</Nav.Link>
-          </div>
-        </Nav>
-      </Navbar.Collapse>
+    <Navbar bg="dark" variant="dark" expand="lg" className="custom-navbar">
+      <Container>
+        <Navbar.Brand href="#home">Welcome</Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="ms-auto">
+            <Nav.Link href="#home">Home</Nav.Link>
+            <Nav.Link href="#about">About</Nav.Link>
+            <Nav.Link href="#projects">Projects</Nav.Link>
+            <Nav.Link href="#resume">Resume</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
     </Navbar>
   );
 };
