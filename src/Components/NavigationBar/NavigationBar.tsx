@@ -3,6 +3,7 @@ import { Navbar, Nav, Container } from "react-bootstrap";
 import { BsBriefcase, BsFileEarmarkRichtext, BsHouse, BsInfoCircle } from "react-icons/bs";
 import "./NavigationBar.css";
 import { Link } from "react-router-dom";
+import logo from "../../assets/Images/logo.png";
 
 const NavigationBar: React.FC = () => {
 
@@ -13,7 +14,9 @@ const NavigationBar: React.FC = () => {
     return (
         <Navbar bg="dark" variant="dark" expand="lg" expanded={expanded} className="custom-navbar">
             <Container>
-                <Navbar.Brand href="#home">Welcome</Navbar.Brand>
+                <Navbar.Brand>
+                    <img src={logo} alt="logo" className="nav-logo" />
+                </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={() => setExpanded(!expanded)} />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ms-auto">

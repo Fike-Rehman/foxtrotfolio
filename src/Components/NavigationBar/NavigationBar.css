@@ -44,3 +44,9 @@
 .nav-icon {
     transition: transform 0.3s ease, color 0.3s ease;
 }
+
+.nav-logo {
+    height: 40px; /* Adjust the size */
+    width: auto;  /* Maintain aspect ratio */
+    margin-right: 10px; /* Add spacing if needed */
+  }
