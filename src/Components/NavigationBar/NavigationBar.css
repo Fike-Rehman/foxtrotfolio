@@ -38,7 +38,6 @@
 
 .nav-link:hover {
     transform: scale(1.1);
-
 }
 
 .nav-icon {
@@ -46,7 +45,13 @@
 }
 
 .nav-logo {
-    height: 40px; /* Adjust the size */
-    width: auto;  /* Maintain aspect ratio */
-    margin-right: 10px; /* Add spacing if needed */
-  }
+    height: 40px;
+    width: auto;
+}
+
+.nav-time {
+    color: white;
+    margin-left: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+}
