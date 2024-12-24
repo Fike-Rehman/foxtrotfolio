@@ -1,14 +1,13 @@
 .social-media-bar {
-    flex: 0;
     width: 100%;
     text-align: center;
 }
 
-.connect-message {
-    font-size: 1.2rem;
-    color: #007bff;
-    /* Adjust color as needed */
-    margin-bottom: 10px;
+.in-touch-message {
+    font-size: 2.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #024d91;
+    margin-bottom: 20px;
 }
 
 .icons-container {
@@ -18,16 +17,16 @@
 }
 
 .icon-link {
-    color: #333;
-    /* Default icon color */
-    font-size: 2rem;
-    /* Adjust size as needed */
     transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .icon-link:hover {
-    color: #007bff;
-    /* Hover color */
     transform: scale(1.2);
-    /* Slight zoom on hover */
+}
+
+@media screen and (max-width: 768px) {
+    .in-touch-message {
+        font-size: 1.5rem;
+        font-weight: 800;
+    }
 }

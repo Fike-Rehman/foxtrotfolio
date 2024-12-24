@@ -20,7 +20,9 @@ const App: React.FC = () => {
         <Route path="/resume" element={<Resume />} />
       </Routes>
       <FooterBar />
+      <div className="footer-spacer"></div>
     </Router>
+
   )
 }
 

@@ -23,11 +23,9 @@ const Home: React.FC = () => {
                     /></span>
                     <p className='welcome-message-secondary'>
                         I am glad you stopped by, <br />
-                        Please feel free to look around or use the links <br />
+                        Please feel free to look around or use the links
                         below to connect with me.<br />
-                        I would love to hear from you...
                     </p>
-
                 </div>
                 <div className='profile-pic-container'>
                     <img src={foliopic} alt="Folio Picture" className='folio-pic' />
@@ -36,7 +34,8 @@ const Home: React.FC = () => {
             <div className='bottom-row'>
                 <SocialMediaBar />
             </div>
-        </div>);
+        </div>
+    );
 };
 
 export default Home;

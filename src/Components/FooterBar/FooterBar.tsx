@@ -1,6 +1,6 @@
 import React from "react";
 import { Navbar, Nav } from "react-bootstrap";
-import { BsGithub, BsLinkedin, BsTwitter, BsGlobe, BsStackOverflow, BsFacebook } from "react-icons/bs";
+import { BsGithub, BsEnvelopeFill, BsLinkedin, BsStackOverflow } from "react-icons/bs";
 import "./FooterBar.css";
 
 const FooterBar: React.FC = () => {
@@ -19,12 +19,12 @@ const FooterBar: React.FC = () => {
 
                     <Nav className="footer-links">
                         <Nav.Link
-                            href="https://github.com/Fike-Rehman"
+                            href="mailto:fike.rehman@hotmail.com"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="footer-link"
                         >
-                            <BsGithub className="footer-icon" />
+                            <BsEnvelopeFill className="footer-icon" />
                         </Nav.Link>
                         <Nav.Link
                             href="https://www.linkedin.com/in/frehman/"
@@ -35,20 +35,20 @@ const FooterBar: React.FC = () => {
                             <BsLinkedin className="footer-icon" />
                         </Nav.Link>
                         <Nav.Link
+                            href="https://github.com/Fike-Rehman"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="footer-link"
+                        >
+                            <BsGithub className="footer-icon" />
+                        </Nav.Link>
+                        <Nav.Link
                             href="https://stackoverflow.com/users/586500/fike-rehman"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="footer-link"
                         >
                             <BsStackOverflow className="footer-icon" />
-                        </Nav.Link>
-                        <Nav.Link
-                            href="https://www.facebook.com/fike.rehman/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="footer-link"
-                        >
-                            <BsFacebook className="footer-icon" />
                         </Nav.Link>
                     </Nav>
                 </Nav>
