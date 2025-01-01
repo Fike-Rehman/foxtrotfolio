@@ -1,0 +1,52 @@
+.download-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px 20px;
+    background-color: #024d91;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    flex: 1;
+    max-width: 500px;
+    white-space: nowrap;
+}
+
+.download-button:hover {
+    background-color: #023d7b;
+    transform: translateY(-5px);
+}
+
+.download-button-container {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+}
+
+.button-icon {
+    font-size: 20px;
+}
+
+@media (max-width: 768px) {
+    .download-button-container {
+        flex-direction: column;
+        /* Stack buttons vertically */
+        gap: 12px;
+        /* Reduce gap for smaller screens */
+        align-items: center;
+        /* Center the buttons */
+    }
+
+    .download-button {
+        width: 100%;
+        /* Make buttons take the full width */
+        max-width: 300px;
+        /* Optional: Limit max width for a cleaner look */
+    }
+}
