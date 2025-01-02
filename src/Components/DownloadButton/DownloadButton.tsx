@@ -4,14 +4,18 @@ import React from 'react';
 
 interface DownloadButtonProps {
     title: string;
+    fileUrl: string;
+    fileName: string;
 }
 
-const DownloadButton: React.FC<DownloadButtonProps> = ({ title }) => {
+const DownloadButton: React.FC<DownloadButtonProps> = ({ title, fileUrl, fileName }) => {
     return (
-        <button className="download-button">
-            <FaDownload className="button-icon" />
-            {title}
-        </button>
+        <a href={fileUrl} download={fileName}>
+            <button className="download-button">
+                <FaDownload className="button-icon" />
+                {title}
+            </button>
+        </a>
     );
 };
 
