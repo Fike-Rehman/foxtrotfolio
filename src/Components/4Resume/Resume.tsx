@@ -9,8 +9,8 @@ const Resume: React.FC = () => {
             </div>
             <div className='resume-download'>
                 <div className='download-button-container'>
-                    <DownloadButton title="Download - Adobe PDF (.pdf)" fileUrl='foxtrotfolio/resume/docs/Resume2025.pdf' fileName='Resume2025.pdf'></DownloadButton>
-                    <DownloadButton title="Download - MS Word (.docx)" fileUrl='foxtrotfolio/resume/docs/Resume2025.docx' fileName='Resume2025.docx'></DownloadButton>
+                    <DownloadButton title="Download - Adobe PDF (.pdf)" fileUrl='foxtrotfolio/docs/Resume2025.pdf' fileName='Resume2025.pdf'></DownloadButton>
+                    <DownloadButton title="Download - MS Word (.docx)" fileUrl='foxtrotfolio/docs/Resume2025.docx' fileName='Resume2025.docx'></DownloadButton>
                 </div>
             </div>
         </div>
