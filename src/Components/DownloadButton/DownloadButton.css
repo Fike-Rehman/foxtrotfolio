@@ -34,19 +34,8 @@
 }
 
 @media (max-width: 768px) {
-    .download-button-container {
-        flex-direction: column;
-        /* Stack buttons vertically */
-        gap: 12px;
-        /* Reduce gap for smaller screens */
-        align-items: center;
-        /* Center the buttons */
-    }
-
     .download-button {
         width: 100%;
-        /* Make buttons take the full width */
         max-width: 300px;
-        /* Optional: Limit max width for a cleaner look */
     }
 }
