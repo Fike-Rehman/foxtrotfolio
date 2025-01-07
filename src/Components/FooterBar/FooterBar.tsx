@@ -7,7 +7,7 @@ const FooterBar: React.FC = () => {
     return (
         <Navbar bg="dark" variant="dark" fixed="bottom" className="custom-footer">
             <Navbar.Collapse className="w-100">
-                <Nav className="d-flex justify-content-between w-100">
+                <Nav className="d-flex justify-content-center w-100">
                     <Navbar.Brand href="#home" className="footer-brand d-none d-lg-block">
                         Developed by Fike Rehman
                     </Navbar.Brand>

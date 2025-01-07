@@ -2,7 +2,7 @@
     display: grid;
     grid-template-rows: 2fr 1fr;
     grid-template-columns: 1fr;
-    margin-top: 80px;
+    margin-top: 60px;
     gap: 20px;
 }
 
@@ -116,8 +116,6 @@
         /* Single column layout */
         height: auto;
         margin-top: 50px;
-
-        background-color: aliceblue;
     }
 
     .home-content {
@@ -139,7 +137,7 @@
     }
 
     .profile-pic-container {
-        margin-top: 20px;
+        margin-top: 5px;
     }
 
     .folio-pic {
