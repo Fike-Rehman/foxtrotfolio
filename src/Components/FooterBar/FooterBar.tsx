@@ -2,6 +2,8 @@ import React from "react";
 import { Navbar, Nav } from "react-bootstrap";
 import { BsGithub, BsEnvelopeFill, BsLinkedin, BsStackOverflow } from "react-icons/bs";
 import "./FooterBar.css";
+import ViteLogo from "../../assets/Images/vitelogo.svg";
+import ReactLogo from "../../assets/Images/reactlogo.svg";
 
 const FooterBar: React.FC = () => {
     return (
@@ -9,7 +11,21 @@ const FooterBar: React.FC = () => {
             <Navbar.Collapse className="w-100">
                 <Nav className="d-flex justify-content-center w-100">
                     <Navbar.Brand href="#home" className="footer-brand d-none d-lg-block">
-                        Developed by Fike Rehman
+                        This project is built with
+                        <a
+                            href="https://reactjs.org/"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            <img src={ReactLogo} alt="React Logo" className="react-vite-logo" />
+                        </a> {""}
+                        +
+                        <a
+                            href="https://vite.dev//"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            <img src={ViteLogo} alt="Vite Logo" className="react-vite-logo" />
+                        </a>
+
                     </Navbar.Brand>
 
                     {/* Centered SiteMap link
