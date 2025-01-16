@@ -7,7 +7,7 @@ import { Card } from "react-bootstrap"; // Still using React-Bootstrap for cards
 interface Project {
     id: number;
     title: string;
-    description: string;
+    description?: JSX.Element
     imageUrl: string;
 }
 

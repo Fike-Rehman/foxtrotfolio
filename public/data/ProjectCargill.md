@@ -1,0 +1,3 @@
+As a member of a large software development team distributed across several countries and time zones, I developed and deployed a large-scale enterprise software system that unified and automated various functions of animal feed production for multiple species of farm animals at several Cargill plants worldwide.
+
+The system stored data in a multi-region, multi-tenant, Azure Cosmos Database for low latency retrieval, resiliency and near real-time updates. The software backend API was built on the principles of REST architecture using ASP.NET Core, whereas the frontend user interface leveraged SPA architecture using Node.js and React JavaScript library. 

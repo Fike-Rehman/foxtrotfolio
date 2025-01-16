@@ -8,13 +8,14 @@
 }
 
 .carousel-card {
+    margin-top: 40px;
     width: 600px;
     background: linear-gradient(45deg, #7cb2ef, #1b2765);
     border-radius: 20px;
     border: #888 2px solid;
     overflow-y: auto;
-    max-height: 576px;
-    height: 576px;
+    max-height: 648px;
+    height: 648px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
