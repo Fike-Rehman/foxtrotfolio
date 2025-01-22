@@ -2,7 +2,7 @@
 
 This repository contains the code for my personal portfolio website. The site is hosted using GitHub Pages.
 
-![Image](/foxtrotfolio/images/SiteScreenshot.png "Screenshot")
+![Screenshot](/public/images/SiteScreenshot.png "Screenshot")
 
 ## Build and Run Locally
 
