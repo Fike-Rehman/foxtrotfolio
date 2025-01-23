@@ -5,8 +5,6 @@
     margin-top: 60px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #024d91;
-    height: 100vh;
-    overflow: hidden;
 }
 
 /* Header Section */
@@ -30,9 +28,6 @@
     justify-content: center;
 }
 
-
-
-/* Other Details Section */
 .projects-other-details {
     background-color: #f1f1f1;
     padding: 2rem;
@@ -42,17 +37,18 @@
     margin-bottom: 60px;
 }
 
-/* Responsive Adjustments */
 @media (max-width: 768px) {
-    .projects-header {
-        padding: 1rem;
+
+    .projects-page {
+        overflow-y: scroll;
+        max-height: 100%;
     }
 
-    .projects-carousel {
-        max-height: 400px;
+    .projects-header {
+        margin-top: 20px;
     }
 
     .projects-other-details {
-        padding: 1rem;
+        padding: 20px;
     }
 }

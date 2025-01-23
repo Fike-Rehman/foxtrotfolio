@@ -4,7 +4,6 @@
     align-items: center;
     padding: 20px;
     height: 100%;
-    background-color: #ffffff;
 }
 
 .carousel-card {
@@ -85,14 +84,26 @@
 
 
 @media (max-width: 768px) {
+
+    .carousel-card-container {
+        align-items: baseline;
+    }
+
     .carousel-card {
         width: 100%;
-        margin: 0 auto;
+        height: auto;
+        margin-top: 20px;
+        margin-bottom: 60px;
     }
 
     .carousel-card img {
         width: 100%;
         height: auto;
         max-height: 120px;
+    }
+
+    .carousel-card:hover {
+        transform: none;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
     }
 }
