@@ -19,19 +19,18 @@
     flex: 0 0 auto;
 }
 
-
 .projects-carousel {
     flex: 2 0 auto;
     /* Allow growth but maintain max height */
     max-height: 500px;
-    /* Set a max height for the carousel section */
     overflow-y: hidden;
-    background: linear-gradient(to bottom, #e3f2fd, #0d7fdc);
     padding: 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
+
 
 /* Other Details Section */
 .projects-other-details {
