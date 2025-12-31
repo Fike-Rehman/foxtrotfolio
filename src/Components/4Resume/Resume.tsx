@@ -8,8 +8,8 @@ const Resume: React.FC = () => {
                 <img src="/foxtrotfolio/images/MyJourneyHR.png" alt="My Journey" className='resume-image' />
             </div>
             <div className='resume-download'>
-                <DownloadButton title="Download - Adobe PDF (.pdf)" fileUrl='/foxtrotfolio/docs/Resume2025.pdf' fileName='Resume2025.pdf'></DownloadButton>
-                <DownloadButton title="Download - MS Word (.docx)" fileUrl='/foxtrotfolio/docs/Resume2025.docx' fileName='Resume2025.docx'></DownloadButton>
+                <DownloadButton title="Download - Adobe PDF (.pdf)" fileUrl='/foxtrotfolio/docs/Resume2026.pdf' fileName='Resume2026.pdf'></DownloadButton>
+                <DownloadButton title="Download - MS Word (.docx)" fileUrl='/foxtrotfolio/docs/Resume2026.docx' fileName='Resume2026.docx'></DownloadButton>
 
             </div>
         </div>
